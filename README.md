@@ -10,8 +10,8 @@ Add a vertical annotation to all graphs in one or more dashboards.
 # Add single vertical line to all graphs of board1 and board2 at given time
 $ add_annotation.py -b board1 board2 -s '2019-01-01T11:22:00+05:30'
 
-# Do a dry run, print the new board JSON source instead of updating it.
-$ add_annotation.py -b board1 board2 -s '2019-01-01T11:22:00+05:30'
+# Do a dry run: Just print the updated board JSON source instead of actually updating it.
+$ add_annotation.py -b board1 board2 -s '2019-01-01T11:22:00+05:30' --dry-run
 
 # Add a vertical range/bar from start to end time, filled with RED, to all graphs of board1 and board2
 $ add_annotation.py --boards board1 board2 -l "maintanance-window" --color "#FF0000" \
